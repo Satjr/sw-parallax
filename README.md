@@ -2,9 +2,11 @@
 This project is about implementing a responsive webpage about star wars with parallax elements.
 ## Getting Started
 
-First you will need npm installed on your machine
++ First you will need nodejs installed on your machine in order to use npm
 
-Once you cloned the project all you need to do is :
++ Clone the project
+
++ Go into the sw-parallax folder and run the following commands:
 
 ```
 npm install
