@@ -1,0 +1,37 @@
+.parallax-img  {
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+
+    > div {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        height: 130%;
+        top: -15%;
+    
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &#kylo-parallax {
+            background-image: url("../images/kiloren-2x.jpg");
+        }
+
+        &#stormtroopers-parallax {
+            background-image: url("../images/stormtroopers-2x.jpg");
+        }
+    }
+
+      &.stormtroopers {
+        height: 40vh;
+        
+        > div {
+            top: 0;
+        }
+    }
+}
+

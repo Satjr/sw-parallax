@@ -1,0 +1,122 @@
+.container {
+    width: 100%;
+}
+
+section {
+    margin: 20px 0;
+}
+
+p, h2, h3, li {
+    padding: 0 10px;
+}
+
+header {
+    min-height: 20px;
+    
+    ul {
+        max-height: 0;
+        display: block;
+        overflow: hidden;
+        transition: 0.2s all ease-in-out;
+    }
+
+    li {
+        display: block;
+        font-size: 1.3em;
+        text-align: center;
+        padding: 15px 0;
+
+        &:first-child {
+            padding-top: 30px;
+        }
+    }
+
+    #hamburger-menu, #close-menu {
+        position: absolute;
+        top: 0;
+        padding: 5px;
+    }
+
+    #hamburger-menu {
+        display: block;
+        right: 0;
+    }
+
+    &.active {
+        ul {
+            max-height: 1000px;
+        }
+        
+        #close-menu {
+            display: block;
+            left: 0;
+        }
+
+        #hamburger-menu {
+            display: none;
+        }
+    } 
+}
+
+#main-content {
+
+    div:first-child {
+        flex-basis: 100%;
+    }
+
+    div:last-child {
+        display: none;
+    }
+}
+
+#logo-parallax {
+    background-image: url("../images/header-bg.png");
+}
+
+
+#kylo-parallax {
+    background-image: url("../images/kiloren.jpg");
+}
+
+#stormtroopers-parallax {
+    background-image: url("../images/stormtroopers.jpg");
+}
+
+footer {
+    #footer-content {
+        background-image: url("../images/darthvader.jpg");
+    
+        > div {
+            flex-wrap: wrap;
+    
+            > * {
+                flex-basis: 50%;
+
+                &#social {
+                    flex-basis: 100%;
+                }
+            } 
+        }
+    }
+}
+
+#social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#sub-content {
+    > div {
+        flex-wrap: wrap;
+
+        > * {
+            flex-basis: 100%;
+
+            &:first-child {
+                text-align: center;
+            }
+        }
+    }
+}

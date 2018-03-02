@@ -1,0 +1,32 @@
+header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+    z-index: 9999;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.7em;
+        cursor: pointer;
+
+        &:hover {
+            color: #FEF600;
+        }
+    }
+
+    #hamburger-menu, #close-menu {
+        display: none;
+    }
+}
