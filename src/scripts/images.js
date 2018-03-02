@@ -30,5 +30,3 @@ droidImg.src = is.mobile() ? droidMobileSrc : droidSrc ;
 fbImg.src = fbSrc;
 twitterImg.src = twitterSrc;
 instagramImg.src = instagramSrc;
-
-

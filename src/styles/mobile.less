@@ -59,7 +59,6 @@ header {
 }
 
 #main-content {
-
     div:first-child {
         flex-basis: 100%;
     }
@@ -73,13 +72,26 @@ header {
     background-image: url("../images/header-bg.png");
 }
 
-
 #kylo-parallax {
     background-image: url("../images/kiloren.jpg");
 }
 
 #stormtroopers-parallax {
     background-image: url("../images/stormtroopers.jpg");
+}
+
+#sub-content {
+    > div {
+        flex-wrap: wrap;
+
+        > * {
+            flex-basis: 100%;
+
+            &:first-child {
+                text-align: center;
+            }
+        }
+    }
 }
 
 footer {
@@ -104,19 +116,4 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-
-#sub-content {
-    > div {
-        flex-wrap: wrap;
-
-        > * {
-            flex-basis: 100%;
-
-            &:first-child {
-                text-align: center;
-            }
-        }
-    }
 }

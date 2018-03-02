@@ -8,6 +8,9 @@ export default class Parallax {
         }
     }
 
+    /** 
+     * Translates image Y axis
+     **/
     animate() {
         const pos = Math.round(this.element.getBoundingClientRect().top * this.speed * -1);
 
